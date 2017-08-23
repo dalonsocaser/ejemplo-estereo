@@ -4,7 +4,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan
+@ComponentScan(basePackages={"es.caser.spring.soundsystem", "es.caser.spring.video"})
 public class CDPlayerConfig {
 
 }
