@@ -1,4 +1,4 @@
-package es.caser.spring.soundsystem;
+package es.caser.spring.cds;
 
 public interface CompactDisc {
 	void play();
