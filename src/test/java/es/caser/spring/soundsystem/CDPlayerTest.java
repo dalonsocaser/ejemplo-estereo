@@ -16,8 +16,13 @@ import es.caser.spring.cds.CdPlayer;
 public class CDPlayerTest {
 	@Autowired
 	private CdPlayer cd;
+	
 	@Test
 	public void cdShouldNotBeNull() {
+		assertNotNull(cd);		
+	}
+	@Test
+	public void should_play_whenCalled() {
 		assertNotNull(cd);
 		cd.play();
 	}
