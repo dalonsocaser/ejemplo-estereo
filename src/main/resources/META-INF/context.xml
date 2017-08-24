@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean name="enriqueIglesiasCd" class="es.caser.spring.cds.CdVirgen">
-	<constructor-arg type="java.lang.String" value="Subeme la radio"/>
-	<constructor-arg type="java.lang.String" value="Enrique Iglesias"/>
-</bean>
-<bean name="masterOfPuppets" class="es.caser.spring.cds.MasterOfPuppets">	
-</bean>
+	<bean name="enriqueIglesiasCd" class="es.caser.spring.cds.CdVirgen">
+		<constructor-arg type="java.lang.String" value="Subeme la radio" />
+		<constructor-arg type="java.lang.String" value="Enrique Iglesias" />
+			<constructor-arg>
+			<list>
+				<value>I'm a Freak</value>
+				<value>There Goes My Baby</value>
+				<value>Bailando</value>
+				<value>El Perdedor</value>				
+				<!-- ...other tracks omitted for brevity... -->
+			</list>
+	</constructor-arg>
+	</bean>
+	<bean name="masterOfPuppets" class="es.caser.spring.cds.MasterOfPuppets">
+	</bean>
 </beans>
