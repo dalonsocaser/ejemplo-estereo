@@ -9,11 +9,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import es.caser.spring.cds.CDPlayerConfig;
 import es.caser.spring.cds.CompactDisc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=CDPlayerConfig.class)
+@ContextConfiguration(locations = "/META-INF/test-context.xml")
 public class CDPlayerTest {
 	@Autowired
 	@Qualifier("masterOfPuppets")

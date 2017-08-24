@@ -1,9 +1,7 @@
 package es.caser.spring.cds;
 
-import org.springframework.stereotype.Component;
-
 import es.caser.spring.media.MediaPlayer;
-@Component
+
 public class CdPlayer implements MediaPlayer {
 	
 	private CompactDisc cd;
