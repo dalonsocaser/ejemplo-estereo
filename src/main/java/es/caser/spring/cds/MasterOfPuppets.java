@@ -2,7 +2,7 @@ package es.caser.spring.cds;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value="masterOfPuppets")
 public class MasterOfPuppets implements CompactDisc {
 	private String title = "Master of Puppets";
 	private String artist = "Metallica";

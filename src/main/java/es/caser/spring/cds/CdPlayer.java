@@ -1,6 +1,5 @@
 package es.caser.spring.cds;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import es.caser.spring.media.MediaPlayer;
@@ -12,9 +11,9 @@ public class CdPlayer implements MediaPlayer {
 		cd.play();
 	}
 	
-	public CdPlayer(@Autowired CompactDisc cd) {
+	public CdPlayer() {
 		super();
-		this.cd = cd;
+		
 	}
 
 	public CompactDisc getCd() {
