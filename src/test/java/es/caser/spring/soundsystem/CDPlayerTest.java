@@ -11,12 +11,15 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import es.caser.spring.cds.CDPlayerConfig;
 import es.caser.spring.cds.CompactDisc;
+import es.caser.spring.cds.annotation.Metal;
+import es.caser.spring.cds.annotation.Rock;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes=CDPlayerConfig.class)
 public class CDPlayerTest {
 	@Autowired
-	@Qualifier("masterOfPuppets")
+	@Rock
+	@Metal	
 	private CompactDisc cd;
 	@Autowired
 	@Qualifier("enriqueIglesiasCd")
